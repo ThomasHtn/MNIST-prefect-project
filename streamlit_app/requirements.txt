@@ -1,0 +1,9 @@
+streamlit
+streamlit-drawable-canvas
+tensorflow
+pillow
+prefect
+pandas
+scikit-learn
+requests
+loguru

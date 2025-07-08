@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+tensorflow
+optuna
+pillow
+prefect
+pandas
+scikit-learn
+pydantic
+python-multipart
+loguru
+psutil

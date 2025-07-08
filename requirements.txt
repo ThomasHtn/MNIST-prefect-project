@@ -1,0 +1,11 @@
+
+fastapi
+uvicorn
+streamlit
+streamlit-drawable-canvas
+tensorflow
+optuna
+pillow
+prefect
+pandas
+scikit-learn
