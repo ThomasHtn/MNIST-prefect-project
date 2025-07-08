@@ -1,15 +1,42 @@
+import io
+from pathlib import Path
 
 import numpy as np
-from tensorflow.keras.models import load_model
+from loguru import logger
 from PIL import Image
-import io
+from tensorflow.keras.models import load_model
 
-model = load_model("../models/latest_model.h5")
+# Paths
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR.parent / "models" / "latest_model.h5"
+
+# Load model at startup
+try:
+    model = load_model(MODEL_PATH)
+    logger.info(f"📦 Model loaded from {MODEL_PATH}")
+except Exception as e:
+    logger.error(f"❌ Failed to load model from {MODEL_PATH}: {e}")
+    model = None
+
 
 def predict_digit(file):
-    image = Image.open(io.BytesIO(file.file.read())).convert("L").resize((28, 28))
-    image = np.array(image).astype("float32") / 255.0
-    image = np.expand_dims(image, axis=(0, -1))
-    prediction = model.predict(image)
-    pred_class = int(np.argmax(prediction))
-    return {"prediction": pred_class}
+    if model is None:
+        logger.error("❌ No model loaded, cannot predict")
+        return {"error": "Model not loaded"}
+
+    try:
+        # Preprocess image
+        image = Image.open(io.BytesIO(file.file.read())).convert("L")
+        image = image.resize((28, 28))
+        image_array = np.array(image).astype("float32") / 255.0
+        image_array = np.expand_dims(image_array, axis=(0, -1))  # Shape (1, 28, 28, 1)
+
+        # Predict
+        predictions = model.predict(image_array)
+        predicted_digit = int(np.argmax(predictions[0]))
+
+        logger.info(f"🔢 Predicted digit: {predicted_digit}")
+        return {"prediction": predicted_digit}
+    except Exception as e:
+        logger.error(f"❌ Prediction failed: {e}")
+        return {"error": "Prediction failed"}

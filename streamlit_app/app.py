@@ -7,8 +7,8 @@ from PIL import Image
 from streamlit_drawable_canvas import st_canvas
 
 # URL de l'API
-API_URL = os.getenv("API_URL", "http://localhost:9500")
-# API_URL = f"http://api:{os.getenv('FASTAPI_PORT', '9500')}"
+API_URL = os.getenv("API_URL", "http://localhost:9500")  # fallback pour usage local
+
 
 st.set_page_config(
     page_title="Reconnaissance de chiffres manuscrits",
