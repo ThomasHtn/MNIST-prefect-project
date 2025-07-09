@@ -6,7 +6,8 @@ pillow
 prefect
 pandas
 scikit-learn
+loguru
 pydantic
 python-multipart
-loguru
 psutil
+requests

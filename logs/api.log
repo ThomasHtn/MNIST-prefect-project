@@ -31,3 +31,138 @@
 2025-07-09 11:30:34.221 | INFO     | main:predict_api:28 - 📤 /predict called
 2025-07-09 11:30:34.274 | INFO     | predict:predict_digit:40 - 🔢 Predicted digit: 8
 2025-07-09 11:30:34.274 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 8}
+2025-07-09 11:42:01.612 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:01.791 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:01.835 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:01.995 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:07.315 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:07.889 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:07.897 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 11:42:08.047 | INFO     | predict:predict_digit:41 - 🔢 Predicted digit: 3
+2025-07-09 11:42:08.048 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 3}
+2025-07-09 11:42:39.796 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:39.804 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 11:42:39.860 | INFO     | predict:predict_digit:41 - 🔢 Predicted digit: 3
+2025-07-09 11:42:39.861 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 3}
+2025-07-09 11:42:48.140 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:51.180 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:52.672 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:53.036 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:53.042 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 11:42:53.097 | INFO     | predict:predict_digit:41 - 🔢 Predicted digit: 5
+2025-07-09 11:42:53.097 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 5}
+2025-07-09 11:42:55.416 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:58.281 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:58.885 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:42:58.891 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 11:42:58.951 | INFO     | predict:predict_digit:41 - 🔢 Predicted digit: 6
+2025-07-09 11:42:58.951 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 6}
+2025-07-09 11:43:00.831 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:02.880 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:03.890 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:04.352 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:04.358 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 11:43:04.414 | INFO     | predict:predict_digit:41 - 🔢 Predicted digit: 4
+2025-07-09 11:43:04.414 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 4}
+2025-07-09 11:43:10.021 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:10.849 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:10.856 | INFO     | main:correct_api:36 - 📤 /correct called with label=7
+2025-07-09 11:43:10.857 | INFO     | correct:save_correction:32 - ✅ Image saved: /home/thomas/atlas/projects/MNIST-prefect-project/data/images/img_20250709114310.png
+2025-07-09 11:43:10.882 | INFO     | correct:save_correction:65 - 📥 Correction saved to DB: (25, '/home/thomas/atlas/projects/MNIST-prefect-project/data/images/img_20250709114310.png', 7, '20250709114310')
+2025-07-09 11:43:10.882 | INFO     | main:correct_api:38 - ✅ Correction saved successfully
+2025-07-09 11:43:20.112 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:23.021 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:23.568 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:23.575 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 11:43:23.638 | INFO     | predict:predict_digit:41 - 🔢 Predicted digit: 8
+2025-07-09 11:43:23.638 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 8}
+2025-07-09 11:43:26.464 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:29.415 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:30.898 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:31.948 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:32.398 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:33.296 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:33.303 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 11:43:33.361 | INFO     | predict:predict_digit:41 - 🔢 Predicted digit: 5
+2025-07-09 11:43:33.361 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 5}
+2025-07-09 11:43:37.014 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:37.568 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:43:37.576 | INFO     | main:correct_api:36 - 📤 /correct called with label=9
+2025-07-09 11:43:37.578 | INFO     | correct:save_correction:32 - ✅ Image saved: /home/thomas/atlas/projects/MNIST-prefect-project/data/images/img_20250709114337.png
+2025-07-09 11:43:37.590 | INFO     | correct:save_correction:65 - 📥 Correction saved to DB: (26, '/home/thomas/atlas/projects/MNIST-prefect-project/data/images/img_20250709114337.png', 9, '20250709114337')
+2025-07-09 11:43:37.591 | INFO     | main:correct_api:38 - ✅ Correction saved successfully
+2025-07-09 11:48:36.537 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:48:39.962 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:48:41.188 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:48:43.645 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:48:44.285 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:48:44.291 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 11:48:44.435 | INFO     | predict:predict_digit:44 - 🔢 Predicted digit: 0
+2025-07-09 11:48:44.435 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 0}
+2025-07-09 11:48:46.382 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:48:48.745 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:48:49.221 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:48:49.232 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 11:48:49.286 | INFO     | predict:predict_digit:44 - 🔢 Predicted digit: 7
+2025-07-09 11:48:49.287 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 7}
+2025-07-09 11:48:53.221 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:48:53.841 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 11:48:53.847 | INFO     | main:correct_api:36 - 📤 /correct called with label=1
+2025-07-09 11:48:53.849 | INFO     | correct:save_correction:32 - ✅ Image saved: /home/thomas/atlas/projects/MNIST-prefect-project/data/images/img_20250709114853.png
+2025-07-09 11:48:53.872 | INFO     | correct:save_correction:65 - 📥 Correction saved to DB: (27, '/home/thomas/atlas/projects/MNIST-prefect-project/data/images/img_20250709114853.png', 1, '20250709114853')
+2025-07-09 11:48:53.873 | INFO     | main:correct_api:38 - ✅ Correction saved successfully
+2025-07-09 12:09:55.747 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:09:55.765 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 12:09:55.906 | INFO     | predict:predict_digit:44 - 🔢 Predicted digit: 7
+2025-07-09 12:09:55.907 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 7}
+2025-07-09 12:09:58.368 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:10:01.432 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:10:02.630 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:10:03.387 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:10:03.394 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 12:10:03.456 | INFO     | predict:predict_digit:44 - 🔢 Predicted digit: 5
+2025-07-09 12:10:03.457 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 5}
+2025-07-09 12:10:28.497 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:10:30.810 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:10:32.035 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:10:35.898 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:10:36.919 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:10:36.937 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 12:10:37.087 | INFO     | predict:predict_digit:44 - 🔢 Predicted digit: 2
+2025-07-09 12:10:37.088 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 2}
+2025-07-09 12:17:04.392 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:04.644 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:04.813 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:07.436 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:07.890 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:07.897 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 12:17:07.955 | INFO     | predict:predict_digit:44 - 🔢 Predicted digit: 1
+2025-07-09 12:17:07.955 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 1}
+2025-07-09 12:17:10.366 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:12.144 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:13.192 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:15.233 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:16.292 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:16.822 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:16.831 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 12:17:16.892 | INFO     | predict:predict_digit:44 - 🔢 Predicted digit: 7
+2025-07-09 12:17:16.892 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 7}
+2025-07-09 12:17:31.524 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:32.618 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:33.030 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:33.037 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 12:17:33.095 | INFO     | predict:predict_digit:44 - 🔢 Predicted digit: 7
+2025-07-09 12:17:33.095 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 7}
+2025-07-09 12:17:34.719 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:36.572 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:36.892 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:36.900 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 12:17:36.973 | INFO     | predict:predict_digit:44 - 🔢 Predicted digit: 7
+2025-07-09 12:17:36.973 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 7}
+2025-07-09 12:17:38.882 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:40.645 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:41.342 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:41.729 | INFO     | main:health:46 - 🔍 Health check: model exists = True
+2025-07-09 12:17:41.737 | INFO     | main:predict_api:28 - 📤 /predict called
+2025-07-09 12:17:41.796 | INFO     | predict:predict_digit:44 - 🔢 Predicted digit: 1
+2025-07-09 12:17:41.796 | INFO     | main:predict_api:30 - 🎯 Prediction result: {'prediction': 1}
