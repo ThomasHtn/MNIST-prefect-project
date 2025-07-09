@@ -58,35 +58,30 @@ services:
     restart: unless-stopped
 
   prefect-server:
-    image: prefecthq/prefect:3-latest
+    image: prefecthq/prefect:2-latest
     command: prefect server start --host 0.0.0.0
-    container_name: prefect-server
     ports:
       - "4200:4200"
+    restart: always
     volumes:
       - prefect_data:/root/.prefect
     environment:
       - PREFECT_LOGGING_LEVEL=INFO
-      - PREFECT_ORION_API_HOST=0.0.0.0
-    restart: unless-stopped
-
-  training-flow:
-    build:
-      context: ./prefect_flows
-      dockerfile: Dockerfile
-    depends_on:
-      - prefect-server
-    environment:
-      - PREFECT_API_URL=http://prefect-server:4200/api
-    command: python training_flow.py
 
   prefect-worker:
-    image: prefecthq/prefect:3-latest
+    image: prefecthq/prefect:2-latest
     depends_on:
       - prefect-server
+    restart: always
     environment:
       - PREFECT_API_URL=http://prefect-server:4200/api
-    command: prefect worker start --pool default-agent-pool
+    volumes:
+      - ./prefect_flows:/app
+    working_dir: /app
+    command: >
+      /bin/sh -c "
+        sleep 10 && prefect worker start --pool retrain-pool-worker
+      "
 
 volumes:
   logs:

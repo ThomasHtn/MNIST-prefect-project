@@ -1,3 +1,7 @@
+import os
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Ignore GPU pour dev
+
 import io
 from pathlib import Path
 
@@ -25,13 +29,11 @@ def predict_digit(file):
         return {"error": "Model not loaded"}
 
     try:
-        # Preprocess image
         image = Image.open(io.BytesIO(file.file.read())).convert("L")
         image = image.resize((28, 28))
         image_array = np.array(image).astype("float32") / 255.0
-        image_array = np.expand_dims(image_array, axis=(0, -1))  # Shape (1, 28, 28, 1)
+        image_array = np.expand_dims(image_array, axis=(0, -1))  # (1, 28, 28, 1)
 
-        # Predict
         predictions = model.predict(image_array)
         predicted_digit = int(np.argmax(predictions[0]))
 

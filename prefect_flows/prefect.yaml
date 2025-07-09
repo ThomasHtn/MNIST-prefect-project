@@ -1,0 +1,27 @@
+name: prefect_flows
+prefect-version: 2
+
+build: null
+push: null
+
+pull:
+- prefect.deployments.steps.set_working_directory:
+    directory: /app
+
+deployments:
+- name: every-2-minutes
+  version: null
+  tags: []
+  concurrency_limit: null
+  description: null
+  entrypoint: training_flow.py:retraining_flow
+  parameters: {}
+  work_pool:
+    name: retrain-pool-worker
+    work_queue_name: default
+    job_variables: {}
+  schedules:
+  - interval: 120.0
+    anchor_date: '2025-07-09T07:18:54.210103+00:00'
+    timezone: UTC
+    active: true

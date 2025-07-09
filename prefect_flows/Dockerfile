@@ -1,10 +1,8 @@
-FROM prefecthq/prefect:3-latest
+FROM prefecthq/prefect:2.14.17
 
 WORKDIR /app
+COPY . .
 
-COPY . /app
-
-COPY ../requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 CMD ["python", "training_flow.py"]

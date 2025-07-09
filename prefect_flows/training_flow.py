@@ -1,4 +1,8 @@
 import os
+import sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+
 import sqlite3
 
 import pandas as pd
@@ -27,7 +31,7 @@ def detect_failure(df: pd.DataFrame):
     return class_counts[class_counts > 5].index.tolist()
 
 
-@flow
+@flow(name="retraining-flow")
 def retraining_flow():
     logger = get_run_logger()
 
@@ -43,5 +47,9 @@ def retraining_flow():
         logger.info("✅ No retraining needed")
 
 
+# Local mode
 if __name__ == "__main__":
     retraining_flow.serve(name="every-2-minutes", interval=120)
+
+# if __name__ == "__main__":
+#     retraining_flow()
