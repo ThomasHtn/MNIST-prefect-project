@@ -8,3 +8,9 @@ pillow
 prefect
 pandas
 scikit-learn
+matplotlib
+loguru
+pydantic
+python-multipart
+psutil
+requests
